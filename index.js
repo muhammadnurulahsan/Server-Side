@@ -3,6 +3,8 @@ const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 5000;
 
+
+
 app.use(cors());
 app.use(express.json());
 
@@ -54,6 +56,8 @@ const users = [
     job: "Web Developer",
   },
 ];
+
+
 
 app.get("/users", (req, res) => {
   if (req.query.name) {
